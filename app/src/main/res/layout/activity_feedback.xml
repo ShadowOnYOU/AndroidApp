@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/support_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Support and Feedback"
+            android:textSize="24sp"
+            android:layout_margin="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:id="@+id/feedback_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Please enter your feedback here"
+            android:layout_below="@id/support_title"
+            android:layout_margin="16dp" />
+
+        <Button
+            android:id="@+id/submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/feedback_edittext"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/contact_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Contact us: 335933870@qq.com"
+            android:layout_below="@id/submit_button"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/faq_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Frequently Asked Questions"
+            android:textSize="18sp"
+            android:layout_below="@id/contact_info"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/faq_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Q: How to use this app? \nA: You can read the Readme.md first!."
+            android:layout_below="@id/faq_title"
+            android:layout_margin="16dp" />
+
+        <TextView
+            android:id="@+id/rating_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate this app"
+            android:textSize="18sp"
+            android:layout_below="@id/faq_content"
+            android:layout_margin="16dp" />
+
+        <RatingBar
+            android:id="@+id/rating_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rating_title"
+            android:layout_margin="16dp" />
+
+        <Button
+            android:id="@+id/submit_rating_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_below="@id/rating_bar"
+            android:layout_margin="16dp" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
